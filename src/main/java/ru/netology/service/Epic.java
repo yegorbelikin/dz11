@@ -15,18 +15,6 @@ public class Epic extends Task {
     }
 
     @Override
-//    public String[] mathes(String query) {
-//        String[] result = new String[0]; // массив для ответа
-//        for (String subtask : subtasks) { // перебираем все задачи
-//            if (subtask.matches(query)) { // если задача подходит под запрос
-//                result = addToArray(result, subtask); // добавляем её в массив ответа
-//            }
-//        }
-//        return result;
-
-
-
-
     public boolean matches(String query) {
         for (String subtask : subtasks) {
             if (subtask.contains(query)) {
@@ -37,18 +25,5 @@ public class Epic extends Task {
         }
         return false;
    }
-
-
-
-//        for (int i = 0; i < subtasks.length; i++) {
-//
-//            if (subtasks[i].contains(query)) {
-//                return true;
-//            }
-//
-//        }
-//
-//        return false;
-//    }
 
 }
